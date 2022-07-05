@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap");
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 0;
+	font-family: $heading-font;
+	font-weight: 700;
+}
+
+ul,
+li,
+a,
+input,
+textarea,
+button {
+	font-family: $body-font;
+	color: $navy;
+}
+
+h1 {
+	font-size: $h1-size-m;
+	text-align: left;
+	padding-left: 3rem;
+	color: $dark-grey;
+
+	span {
+		font-weight: 300;
+	}
+	@include for-desktop {
+		font-size: $h1-size-dt;
+	}
+}
+
+h2 {
+	font-size: $h2-size-m;
+	text-align: center;
+
+	@include for-desktop {
+		// text-align: left;
+		font-size: $h2-size-dt;
+	}
+}
+
+h3 {
+	font-size: $h3-size-m;
+
+	@include for-desktop {
+		font-size: $h3-size-dt;
+	}
+}
+
+p {
+	font-family: $body-font;
+	font-size: $p-size-m;
+	text-align: left;
+	font-weight: 400;
+	color: $navy;
+
+	@include for-desktop {
+		// text-align: left;
+		font-size: $p-size-dt;
+	}
+}

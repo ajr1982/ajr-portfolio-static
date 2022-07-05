@@ -1,0 +1,75 @@
+header {
+	width: 100vw;
+	margin-top: 10vw;
+	margin-bottom: 0;
+	height: 90vh;
+
+	background-image: radial-gradient(
+		farthest-corner at 100% 100%,
+		#999999 0%,
+		#ffffff 50%
+	);
+
+	background-position: 0 60%;
+
+	h1 {
+		padding: 10rem 0 1rem 1rem;
+		text-align: left;
+		pointer-events: none;
+	}
+	@include for-desktop {
+		width: 90vw;
+		margin-top: 0;
+		margin-left: 10vw;
+		height: 100vh;
+		h1 {
+			padding: 13rem 0 3rem 3rem;
+			margin: 0;
+		}
+	}
+
+	.animation-container {
+		position: relative;
+		.alan-head {
+			width: 60%;
+			display: block;
+			position: absolute;
+			left: 30%;
+			top: 120%;
+			opacity: 1;
+		}
+		.item {
+			font-size: 6vw;
+			pointer-events: none;
+		}
+		#gsap {
+			margin: 0;
+			height: 6vw;
+			display: inline-block;
+		}
+		@include for-desktop {
+			#gsap,
+			.item {
+				font-size: 3.6vw;
+			}
+		}
+	}
+
+	#svg {
+		width: 80%;
+		margin-left: 10%;
+		opacity: 0;
+		transform: rotate(-7deg);
+		pointer-events: none;
+
+		@include for-desktop {
+			width: 60%;
+			margin-left: 30%;
+		}
+	}
+	#path {
+		stroke: none;
+		opacity: 0;
+		pointer-events: none;
+	}
+}

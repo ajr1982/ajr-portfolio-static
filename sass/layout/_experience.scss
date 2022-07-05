@@ -1,0 +1,95 @@
+section {
+	background-image: radial-gradient(
+		farthest-corner at 100% 0%,
+		#999999 0%,
+		#ffffff 50%
+	);
+	.exp-container {
+		width: 90%;
+		margin: 8vw auto;
+		display: flex;
+		border: 1px solid rgba($color: #000000, $alpha: 0.3);
+		justify-content: flex-start;
+		align-items: stretch;
+		flex-direction: column;
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 5px 5px 10px #999999;
+		.exp-jobs {
+			flex: 1;
+			//border: 1px solid red;
+			//border-radius: 10px 0 0 10px;
+			ul {
+				height: 100%;
+				margin: 0;
+				display: flex;
+				padding-left: 0;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				text-align: center;
+
+				li {
+					width: 100%;
+					height: 8vw;
+					background-color: $dark-grey;
+					flex: 1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 3.5vw;
+					transition: all 0.3s ease-out;
+				}
+				li:first-of-type {
+					border-radius: 10px 0 0 0;
+				}
+				li:nth-of-type(3) {
+					border-radius: 0 10px 0 0;
+				}
+				li.active {
+					background-color: #666666;
+					color: #ffffff;
+				}
+			}
+		}
+		.exp-desc {
+			//flex: 3;
+			//border: 1px solid red;
+			position: relative;
+			height: 100vw;
+			p {
+				//display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				padding: 1vw;
+				transition: all 0.3s ease-out;
+			}
+			p.active {
+				opacity: 1;
+				//display: block;
+			}
+		}
+		@include for-desktop {
+			flex-direction: row;
+			.exp-jobs {
+				flex-direction: column;
+				ul {
+					flex-direction: column;
+					li {
+						font-size: 2vw;
+						cursor: pointer;
+					}
+					li:nth-of-type(3) {
+						border-radius: 0 0 0 10px;
+					}
+				}
+			}
+			.exp-desc {
+				height: 50vh;
+				flex: 3;
+			}
+		}
+	}
+}

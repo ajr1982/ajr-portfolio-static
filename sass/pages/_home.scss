@@ -1,0 +1,44 @@
+html {
+	scroll-behavior: smooth;
+}
+body,
+main {
+	section {
+		width: 100vw;
+
+		margin-top: 0;
+		h1 {
+			padding-top: 15vh;
+		}
+	}
+	section#experience,
+	section#contact {
+		height: 100vh;
+	}
+	@include for-desktop {
+		section {
+			width: 90vw;
+			margin-left: 10vw;
+
+			h1 {
+				padding-top: 3vw;
+			}
+		}
+	}
+}
+//FONT AWESOME ICON COLOURS
+.js {
+	color: #f7e019;
+}
+.sass {
+	color: #c86295;
+}
+.css3 {
+	color: #1979b8;
+}
+.html5 {
+	color: #dc4b25;
+}
+.react {
+	color: #5ed3f2;
+}

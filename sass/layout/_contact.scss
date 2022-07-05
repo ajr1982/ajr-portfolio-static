@@ -1,0 +1,43 @@
+section#contact {
+	form {
+		width: 80%;
+		margin: 2vw auto;
+	}
+	input,
+	textarea,
+	button {
+		width: 100%;
+		font-size: 5vw;
+		margin-bottom: 2vw;
+		@include rounded-raised;
+		padding: 1vw;
+		outline: none;
+		border: 1px solid $dark-grey;
+	}
+	textarea {
+		height: 50vh;
+	}
+	button {
+		background-color: $navy;
+		color: $dark-grey;
+	}
+	@include for-desktop {
+		form {
+			margin-left: 3rem;
+		}
+		input,
+		textarea,
+		button {
+			font-size: 1.5vw;
+			padding: 0.5vw;
+			margin-bottom: 1vw;
+		}
+		input,
+		button {
+			width: 50%;
+		}
+		textarea {
+			height: 30vh;
+		}
+	}
+}
