@@ -6,7 +6,7 @@ section {
 	);
 	.exp-container {
 		width: 90%;
-		margin: 8vw auto;
+		margin: 5vw auto;
 		display: flex;
 		border: 1px solid rgba($color: #000000, $alpha: 0.3);
 		justify-content: flex-start;
@@ -31,7 +31,7 @@ section {
 
 				li {
 					width: 100%;
-					height: 8vw;
+					height: 11vw;
 					background-color: $dark-grey;
 					flex: 1;
 					display: flex;
@@ -49,6 +49,7 @@ section {
 				li.active {
 					background-color: #666666;
 					color: #ffffff;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -56,7 +57,7 @@ section {
 			//flex: 3;
 			//border: 1px solid red;
 			position: relative;
-			height: 100vw;
+			height: 135vw;
 			p {
 				//display: none;
 				position: absolute;
@@ -87,7 +88,7 @@ section {
 				}
 			}
 			.exp-desc {
-				height: 50vh;
+				height: 60vh;
 				flex: 3;
 			}
 		}

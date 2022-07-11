@@ -11,10 +11,7 @@ main {
 			padding-top: 15vh;
 		}
 	}
-	section#experience,
-	section#contact {
-		height: 100vh;
-	}
+
 	@include for-desktop {
 		section {
 			width: 90vw;
@@ -23,6 +20,10 @@ main {
 			h1 {
 				padding-top: 3vw;
 			}
+		}
+		section#experience,
+		section#contact {
+			height: 100vh;
 		}
 	}
 }
