@@ -151,6 +151,7 @@ modal.addEventListener("click", (e) => {
 		toggleActive(modal, "modal-active");
 		expandedProjects.forEach(function (expandedProject) {
 			expandedProject.style.opacity = 0;
+			expandedProject.style.pointerEvents = "none";
 		});
 	}
 });
@@ -165,6 +166,7 @@ projects.forEach(function (project) {
 				return false;
 			} else {
 				expandedProject.style.opacity = 1;
+				expandedProject.style.pointerEvents = "all";
 			}
 		});
 	});

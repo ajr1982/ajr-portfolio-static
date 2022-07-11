@@ -142,7 +142,7 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 10vh;
+  height: 11vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -489,6 +489,7 @@ section#work .modal-inner {
   top: 0;
   left: 0;
   width: 100%;
+  pointer-events: none;
   opacity: 0;
   z-index: 9999;
 }
@@ -509,6 +510,9 @@ section#work .modal-inner .modal-details a {
   section#work .modal-inner .modal-details a {
     font-size: 1.458vw;
   }
+}
+section#work .modal-inner .modal-details p {
+  height: 18vw;
 }
 section#work .modal-active {
   display: block;

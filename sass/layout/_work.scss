@@ -109,7 +109,7 @@ section#work {
 		top: 0;
 		left: 0;
 		width: 100%;
-
+		pointer-events: none;
 		opacity: 0;
 		z-index: 9999;
 		img {
@@ -126,6 +126,9 @@ section#work {
 				@include for-desktop {
 					font-size: $p-size-dt;
 				}
+			}
+			p {
+				height: 18vw;
 			}
 		}
 	}
