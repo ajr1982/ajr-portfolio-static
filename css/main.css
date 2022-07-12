@@ -420,6 +420,9 @@ section#work .work-container .work-block .hover-slide {
 section#work .work-container .work-block .hover-slide h3 {
   font-size: 3vw;
 }
+section#work .work-container .work-block > * {
+  pointer-events: none;
+}
 @media (min-width: 720px) {
   section#work .work-container {
     width: 80%;
@@ -437,9 +440,6 @@ section#work .work-container .work-block .hover-slide h3 {
   }
   section#work .work-container .work-block:hover .hover-slide {
     bottom: 0;
-  }
-  section#work .work-container .work-block > * {
-    pointer-events: none;
   }
 }
 section#work .modal-cover {
@@ -473,15 +473,21 @@ section#work .close {
 }
 section#work .modal {
   width: 80vw;
-  height: 80vh;
+  height: 55vh;
+  overflow: hidden;
   margin: 10vh 10vw;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #999999;
-  overflow-y: scroll;
   z-index: 9999;
   position: relative;
   cursor: default;
+}
+@media (min-width: 720px) {
+  section#work .modal {
+    height: 80vh;
+    overflow-y: scroll;
+  }
 }
 section#work .modal-inner {
   transition: all 0.5s ease-out;

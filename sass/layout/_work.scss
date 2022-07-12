@@ -35,6 +35,9 @@ section#work {
 				}
 			}
 		}
+		.work-block > * {
+			pointer-events: none;
+		}
 	}
 
 	@include for-desktop {
@@ -56,9 +59,6 @@ section#work {
 
 			.work-block:hover .hover-slide {
 				bottom: 0;
-			}
-			.work-block > * {
-				pointer-events: none;
 			}
 		}
 	}
@@ -95,13 +95,18 @@ section#work {
 	}
 	.modal {
 		width: 80vw;
-		height: 80vh;
+		height: 55vh;
+		overflow: hidden;
 		margin: 10vh 10vw;
 		@include rounded-raised;
-		overflow-y: scroll;
+
 		z-index: 9999;
 		position: relative;
 		cursor: default;
+		@include for-desktop {
+			height: 80vh;
+			overflow-y: scroll;
+		}
 	}
 	.modal-inner {
 		transition: all 0.5s ease-out;
