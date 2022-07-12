@@ -32,6 +32,9 @@ section#work {
 				transition: all 0.3s ease-in-out;
 				h3 {
 					font-size: 3vw;
+					@include for-desktop {
+						font-size: 2vw;
+					}
 				}
 			}
 		}
@@ -95,7 +98,7 @@ section#work {
 	}
 	.modal {
 		width: 80vw;
-		height: 55vh;
+		height: 65vh;
 		overflow: hidden;
 		margin: 10vh 10vw;
 		@include rounded-raised;

@@ -420,6 +420,11 @@ section#work .work-container .work-block .hover-slide {
 section#work .work-container .work-block .hover-slide h3 {
   font-size: 3vw;
 }
+@media (min-width: 720px) {
+  section#work .work-container .work-block .hover-slide h3 {
+    font-size: 2vw;
+  }
+}
 section#work .work-container .work-block > * {
   pointer-events: none;
 }
@@ -473,7 +478,7 @@ section#work .close {
 }
 section#work .modal {
   width: 80vw;
-  height: 55vh;
+  height: 65vh;
   overflow: hidden;
   margin: 10vh 10vw;
   background-color: #ffffff;
