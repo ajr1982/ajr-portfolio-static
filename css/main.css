@@ -348,7 +348,7 @@ section .exp-container .exp-jobs ul li.active {
 }
 section .exp-container .exp-desc {
   position: relative;
-  height: 135vw;
+  height: 145vw;
 }
 section .exp-container .exp-desc p {
   position: absolute;

@@ -162,6 +162,7 @@ projects.forEach(function (project) {
 		toggleActive(modal, "modal-active");
 
 		expandedProjects.forEach(function (expandedProject) {
+			console.log(e.target.dataset.project);
 			if (e.target.dataset.project !== expandedProject.dataset.project) {
 				return false;
 			} else {
